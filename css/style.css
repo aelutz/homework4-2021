@@ -41,10 +41,10 @@ body{
 
 h1{
   color: #c12258;
-  font-size: 2em;
+  font-size: 32px;
   /*Req 2*/
-  height: 32px;
   line-height: 2;
+  text-align: center;
 }
 
 p{
@@ -70,35 +70,80 @@ a{
 
 
 td{
+  text-align: center;
+  border-top: 2px solid #000000;
+  padding: 10px;
   
 }
 
 
 .colhead{
   color: #FFFFFF;
-
+  min-width: 125px;
+  padding 10px;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #7e0825;
+  text-transform: uppercase;
 }
 
 .rowhead{
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+
 
 }
 
 
 table{
     border: 5px solid #000000;
-}
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+  }
 
 /* I gave you the selector, but not the property-value pair. 
 You can use Inspect Element or your editor to find selectors. */
-thead tr:first-child th:first-child{}
+thead tr:first-child th:first-child{
+  border-radius: 50px 0px 0px 0px;
+}
 
 /*Add selectors and rules here*/
+thead tr:first-child th:nth-child(7){
+  border-radius: 0px 50px 0px 0px;
+}
+
+tbody tr:nth-child(10) th:first-child{
+  border-radius: 0px 0px 0px 50px;
+}
+
+tbody tr:nth-child(10) td:nth-child(7){
+  border-radius: 0px 0px 50px 0px;
+}
+
+/*row colors*/
+tr:nth-child(odd) {
+background: transparent;
+
+}
+
+tr:nth-child(even) {
+background: #D1D1D1;
+}
+
+tr:hover {
+  background: rgba(126, 8, 37, 0.25);
+}
 
 
-
-footer{
+ footer{
   width:100%;
   background:#000000;
   text-align:center;
   color: #FFFFFF;
+  min-height: 75px;
+  /*display*/: block;
+  /*margin-right: 0;*/
+  /*margin-left: 0;*/
+  /*width: 100%;*/
 }
