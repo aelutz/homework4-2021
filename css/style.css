@@ -80,7 +80,7 @@ td{
 .colhead{
   color: #FFFFFF;
   min-width: 125px;
-  padding 10px;
+  padding: 10px;
   vertical-align: middle;
   text-align: center;
   background-color: #7e0825;
@@ -137,13 +137,12 @@ tr:hover {
 
 
  footer{
-  width:100%;
+  width:100vw;
   background:#000000;
   text-align:center;
   color: #FFFFFF;
   min-height: 75px;
-  /*display*/: block;
-  /*margin-right: 0;*/
-  /*margin-left: 0;*/
-  /*width: 100%;*/
-}
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  }
